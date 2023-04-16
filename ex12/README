@@ -1,0 +1,25 @@
+Greetings! we made a boggle game consisting of 3 windows:
+-the start screen:
+ a small window with stylish play button and some text with the name of the game
+-the game screen:
+this screen contains the 4 x 4 board on a button grid, a clear button that clears the buttons board
+(returns all of the pressed to the regular color)
+and the display and a choose button that checks if the word in the path and the path is legal.
+the buttons in the board function in the following way:
+    if a player presses an unpressed button it is colored in purple:
+        if the button can be added to the current path it stays purple and if not it goes back to the regular color.
+    if a player presses a button that is lit up in purple:
+        the button goes back to the regular color if it is the last button that was pressed
+        else it stays purple.
+we also added a bank of the words that were already guessed using the tkinter list box,
+if the player guesses a word that was already guessed the background of the list box turns purple for a few milliseconds
+the game screen also contains a timer that displays the remaining round time
+and it also shows the player's current score.
+-the end game screen:
+    this screen displays the players final score at the end of the round,
+    the words that the player guessed during the round and finally a stylized play again button.
+    if the play again button is pressed the player is taken to the game screen and begins a new round.
+
+Notes:
+* in our game we chose to stick to a purple-gray color scheme:
+ firstly because gray is easy on the eyes and secondly because purple contrasts well with it.
